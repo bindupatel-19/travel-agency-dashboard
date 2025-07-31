@@ -2,6 +2,11 @@ import {Link, NavLink} from "react-router" ;
 import {sidebarItems} from "~/constants";
 import {cn} from "~/lib/util";
 const NavItems = () => {
+    let user={
+        name: 'David',
+        email: 'contactdavid@gmail.com',
+        imageUrl:'/assets/images/david.webp'
+    }
 
 
     return (
@@ -34,6 +39,10 @@ const NavItems = () => {
                     ))}
                 </nav>
 
+                <footer className="nav-footer">
+                    <img src={user?.imageUrl || '/assets/images/david.webp'}
+                         alt = {user?.name || 'David'}/>
+                </footer>
             </div>
         </section>
     )

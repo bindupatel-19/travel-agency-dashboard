@@ -21,7 +21,7 @@ const NavItems = ({handleClick}:{handleClick?:()=> void}) => {
                 <nav>
                     {sidebarItems.map(({id, href, icon, label}) => (
                         <NavLink to={href} key={id}>
-                            {( {isActive}: { isActive:boolean })=>(
+                            {({ isActive }: { isActive:boolean })=>(
                                 <div className={cn('group nav-item', {
                                     'bg-primary-100 !text-white' : isActive
                                 })} onClick={handleClick}>

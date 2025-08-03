@@ -1,6 +1,8 @@
 import {Link, NavLink} from "react-router" ;
 import {sidebarItems} from "~/constants";
 import {cn} from "~/lib/util";
+
+
 const NavItems = ({handleClick}:{handleClick?:()=> void}) => {
     let user={
         name: 'David',
